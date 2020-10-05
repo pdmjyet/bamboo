@@ -1,0 +1,21 @@
+{
+    "http.port": 8095,
+    "mysqlConfig": {
+        "driver": "com.mysql.jdbc.Driver",
+        "url": "jdbc:mysql://localhost:3306/gt_store?maxAllowedPacket=16777216&useSSL=false&useUnicode=yes&characterEncoding=UTF-8",
+        "username": "root",
+        "password": "welcome1",
+        "maxConnections": 10,
+        "validationQuery": "SELECT 1",
+        "poolName": "HikariAdminPool",
+        "minIdle": 2,
+        "cachePrepStmts":true,
+        "prepStmtCacheSize":256,
+        "prepStmtCacheSqlLimit":2048,
+        "useServerPrepStmts":true,
+        "useHikariPool": true,
+        "setNamesSql": "SET NAMES 'utf8mb4';"
+      },
+    "httpVerticleInstances": 1,
+    "gtVerticleInstance":1
+}
